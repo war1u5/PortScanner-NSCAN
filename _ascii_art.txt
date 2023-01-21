@@ -1,0 +1,15 @@
+
+███╗   ██╗███████╗ ██████╗ █████╗ ███╗   ██╗
+████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║
+██╔██╗ ██║███████╗██║     ███████║██╔██╗ ██║
+██║╚██╗██║╚════██║██║     ██╔══██║██║╚██╗██║
+██║ ╚████║███████║╚██████╗██║  ██║██║ ╚████║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+
+--help <display invocation options>
+--port <port to scan>
+--scan <IP address/domain name to scan>
+--file <file name containing IP addresses to scan>
+--syn  <execute a syn scan>
+--ping <check if host is alive before scanning>

@@ -1,0 +1,40 @@
+.TH nscan 1
+.SH NAME
+nscan \- Network exploration tool
+.SH SYNOPSIS
+.B nscan 
+[ Option ] 
+{ target specification }
+.SH DESCRIPTION
+.B Nscan (“Network Scanner”) 
+is an open source tool for network exploration and security auditing. It was designed to rapidly scan single/multiple host(s). Nscan determines what hosts are available on the network.
+
+The output from Nscan is a list of scanned targets, with supplemental information on each depending on the options used. Key among that information is the “ports table”. That table lists the port number and state.
+      
+In addition to the interesting ports table, Nscan can provide further information on targets, including reverse DNS names.
+
+       A typical Nscan scan is shown in Example 1.
+
+       Example 1. A representative Nscan scan
+
+           # nscan --port 80 scanme.nmap.org
+       
+           ./main --port 80 scanme.nmap.org
+           IP: 45.33.32.156
+           Port 80 is active
+.SH OPTIONS SUMMARY
+This options summary is printed when Nscan is run with no arguments, and the latest version is always available at https://github.com/teobanu21/Port-Scanner. It helps people remember the most common options, but is no substitute for the in-depth documentation in the rest of this manual.
+
+           Nscan v2.0 ( https://github.com/teobanu21/Port-Scanner/blob/main/README.md )
+           Usage: nscan [Options] {target specification}
+           TARGET SPECIFICATION:
+             Can pass hostnames/IP addresses
+             Ex: scanme.nmap.org/ 45.33.32.156;
+             --scan <desired IP/domain name>
+             --file <inputfilename>: Input from list of hosts
+             --syn  <desired IP/domain name>
+           PORT SPECIFICATION:
+             --port <desired port number>: Only scan specified 
+               Ex: --port 22
+           HOST DISCOVERY:
+             --ping <desired ip/domain name>
